@@ -5,7 +5,7 @@
     dando mais consistencia na classe
 */ 
 
-class Carro{
+export default class Carro{
     public marca: string
     public modelo: string
 
@@ -26,7 +26,8 @@ class Carro{
         return this.AlterarVelocidade(-5)
     }
 
-    private AlterarVelocidade(delta: number): number{
+    // Metodo protected pode ser transmitido por herança
+    protected AlterarVelocidade(delta: number): number{
         const novaVelocidade = this.velocidadeAtual + delta
         const valocidadeValida = novaVelocidade >= 0 && novaVelocidade <= this.velocidadeMaxima
 
