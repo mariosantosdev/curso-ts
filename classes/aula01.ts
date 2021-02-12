@@ -2,7 +2,7 @@
     Classes & Atributos #01
 */
 
-class Data {
+export class Data {
     // Por padrão todos são publicos
     public dia: number
     mes: number
